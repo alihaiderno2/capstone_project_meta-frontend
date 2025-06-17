@@ -1,18 +1,22 @@
-// src/components/About.jsx
-function About() {
+import React from 'react';
+import './About.css';
+
+export default function About() {
   return (
     <section className="about">
-      <div>
-        <h2>About Little Lemon</h2>
+      <div className="about-text">
+        <h2>Little Lemon</h2>
+        <h3>Chicago</h3>
         <p>
-          kdlfjhrkgkfdgihkdfsjgdvklhfkfj gvkfjv fkgfhgrfhgfkfjgkjg
-          sfjkfhhiighsfhgfhhfgivgskihhkj
+          Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails
+          in a lively but casual environment. The restaurant features locally-sourced ingredients and a
+          seasonal menu inspired by Mediterranean flavors.
         </p>
       </div>
-      <div>
-        <img src="https://via.placeholder.com/250" alt="About" />
+      <div className="about-images">
+        <img src="/icons_assets/restaurant chef B.jpg" alt="Chef Mario" className="img1" />
+        <img src="/icons_assets/Mario and Adrian b.jpg" alt="Chef Adrian" className="img2" />
       </div>
     </section>
   );
 }
-export default  About;

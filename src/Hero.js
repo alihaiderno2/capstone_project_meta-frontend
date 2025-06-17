@@ -1,15 +1,18 @@
-function Hero() {
+import React from 'react';
+import './Hero.css';
+
+export default function Hero() {
   return (
     <section className="hero">
-      <div>
-        <h2>CHICAGO</h2>
-        <p>GFGXDSHFDFHRGCHGGC NVBFVCGV CFK</p>
-        <button>Start free trial</button>
+      <div className="hero-content">
+        <h1>Little Lemon</h1>
+        <h2>Chicago</h2>
+        <p>We serve fresh and delicious Mediterranean dishes, straight from our family recipes.</p>
+        <button>Start Free Trial</button>
       </div>
-      <div>
-        <img src="https://via.placeholder.com/300" alt="Hero" />
+      <div className="hero-image">
+        <img src="/icons_assets/Mario and Adrian A.jpg" alt="Delicious dish" />
       </div>
     </section>
   );
 }
-export default Hero;

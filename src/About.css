@@ -1,0 +1,63 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background-color: rgba(73, 94, 87, 0.05);
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1 1 300px;
+}
+
+.about-text h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 36pt;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.about-text h3 {
+  font-size: 20pt;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 14pt;
+  color: #444;
+  line-height: 1.6;
+}
+
+.about-images {
+  position: relative;
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.about-images .img1,
+.about-images .img2 {
+  width: 200px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  position: absolute;
+}
+
+.about-images .img1 {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotate(-4deg);
+}
+
+.about-images .img2 {
+  top: 40px;
+  left: 40px;
+  z-index: 0;
+  transform: rotate(4deg);
+}

@@ -1,8 +1,9 @@
+import "./Header.css";
 function Header() {
   return (
     <header className="header">
-      <div className="logo">Little Lemon
-        <img src="C:\Users\User\Desktop\Capstone_project\table_booking_little_lemon\public\icons_assets\Logo .svg" alt="Little Lemon Logo" />
+      <div className="logo">
+        <img src="\icons_assets\Logo .svg" alt="Little Lemon Logo" />
       </div>
       <nav className="nav">
         <ul>
