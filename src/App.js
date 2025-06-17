@@ -1,27 +1,24 @@
-import './App.css';
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Hero from './Hero';
-import Testimonials from './Testimonials';
-import Specials from './Specials';
-import About from './About';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+import MainPage from './pages/MainPage';
+import BookingPage from './pages/BookingPage';
+
+import './App.css';
+
 function App() {
   return (
-    <div className="App">
-      <header>
-        <Header />
-      </header>
-      <main>
-            <Hero />
-            <Specials />
-            <Testimonials />
-            <About />
-      </main>
-      <footer>
-              <Footer />
-      </footer>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/reservation" element={<BookingPage />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

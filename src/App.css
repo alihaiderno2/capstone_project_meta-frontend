@@ -71,11 +71,6 @@ nav {
   transition: background-color 0.3s ease;
 }
 
-.nav a:hover {
-  background-color: var(--secondary-color);
-  color: black;
-}
-
 
 img {
   max-width: 100%;
