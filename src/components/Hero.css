@@ -5,7 +5,7 @@
   padding: 4rem 2rem;
   background-color: rgba(73, 94, 87, 0.9);
   color: white;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .hero-content {
@@ -49,7 +49,7 @@
 }
 
 .hero-image img {
-  max-width: 350px;
+  max-width: 450px;
   border-radius: var(--card-radius);
   box-shadow: var(--shadow);
 }
